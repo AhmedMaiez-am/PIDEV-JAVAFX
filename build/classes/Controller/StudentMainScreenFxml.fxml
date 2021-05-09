@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane id="Anchor" fx:id="an" prefHeight="593.0" prefWidth="972.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.QuizListFxmlController">
+   <children>
+      <JFXToolbar AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <FlowPane BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="back" onAction="#back" prefHeight="25.0" prefWidth="410.0" text="Retour" />
+               </children>
+            </FlowPane>
+         </top>
+      </JFXToolbar>
+      <StackPane fx:id="stackPanel" prefHeight="499.0" prefWidth="972.0" AnchorPane.bottomAnchor="186.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0" />
+   </children>
+</AnchorPane>

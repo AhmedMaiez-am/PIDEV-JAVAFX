@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="772.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.InventaireController">
+   <children>
+      <ImageView fitHeight="786.0" fitWidth="1170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../UI/InvCours.png" />
+         </image>
+      </ImageView>
+      <ListView fx:id="tbAfficher" layoutX="153.0" layoutY="324.0" prefHeight="310.0" prefWidth="403.0" stylesheets="@../UI/listStyles.css" />
+      <Button fx:id="btnAffiche" layoutX="790.0" layoutY="154.0" mnemonicParsing="false" onAction="#afficherCours" prefHeight="49.0" prefWidth="161.0" stylesheets="@../UI/buttonStyles.css" text="Afficher inventaire" textFill="#fe8488">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnSupp" layoutX="595.0" layoutY="551.0" mnemonicParsing="false" onAction="#supprimerCours" stylesheets="@../UI/buttonStyles.css" text="Supprimer le cours" textFill="#00ff0d">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnList" layoutX="769.0" layoutY="621.0" mnemonicParsing="false" onAction="#changeList" stylesheets="@../UI/buttonStyles.css" text="Liste des cours" textFill="#687072" underline="true">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnList1" layoutX="599.0" layoutY="621.0" mnemonicParsing="false" onAction="#changeRecherche" stylesheets="@../UI/buttonStyles.css" text="Rechercher cours" textFill="#596061" underline="true">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnImp" layoutX="823.0" layoutY="552.0" mnemonicParsing="false" onAction="#imprimer" prefHeight="38.0" prefWidth="161.0" stylesheets="@../UI/buttonStyles.css" text="Imprimer Cours" textFill="#04ff00">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="lbl1" layoutX="14.0" layoutY="69.0" opacity="0.0" text="Label" />
+      <Button fx:id="btnRet" layoutX="932.0" layoutY="621.0" mnemonicParsing="false" onAction="#redirectHome" stylesheets="@../UI/buttonStyles.css" text="Retour" textFill="#687072" underline="true">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="lbl2" layoutX="24.0" layoutY="79.0" opacity="0.0" text="Label" />
+      <Label fx:id="lbl3" layoutX="34.0" layoutY="89.0" opacity="0.0" prefHeight="178.0" prefWidth="275.0" text="Label" wrapText="true" />
+   </children>
+</AnchorPane>

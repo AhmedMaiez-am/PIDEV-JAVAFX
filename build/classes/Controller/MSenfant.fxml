@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="539.0" prefWidth="926.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MSenfantController">
+    <children>
+      <ImageView fitHeight="545.0" fitWidth="964.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../UI/msEnfant1.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnretour" layoutX="33.0" layoutY="32.0" mnemonicParsing="false" onAction="#redirection" prefHeight="29.0" prefWidth="86.0" stylesheets="@../UI/buttonStyles.css" text="Retour" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Agency FB Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TabPane layoutX="33.0" layoutY="118.0" prefHeight="318.0" prefWidth="500.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Suppression">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="182.0" fitWidth="238.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../UI/mra.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="41.0" fitWidth="211.0" layoutX="247.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../UI/tektek.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="54.0" fitWidth="153.0" layoutX="247.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../UI/tektek.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="164.0" layoutY="31.0" text="Nom :" textFill="WHITE">
+                           <font>
+                              <Font name="Agency FB Bold" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="152.0" layoutY="84.0" text="Prenom :" textFill="WHITE">
+                           <font>
+                              <Font name="Agency FB Bold" size="21.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="nomsup" layoutX="248.0" layoutY="23.0" prefHeight="42.0" prefWidth="149.0" stylesheets="@../UI/textFieldStyles.css" />
+                        <TextField fx:id="prenomsup" layoutX="249.0" layoutY="79.0" prefHeight="36.0" prefWidth="149.0" stylesheets="@../UI/textFieldStyles.css" />
+                        <Button fx:id="btnsupp" layoutX="282.0" layoutY="145.0" mnemonicParsing="false" onAction="#SupprimeEnfant" style="-fx-background-color: #fbff00;" text="Supprimer" textFill="#0a0000">
+                           <font>
+                              <Font name="Agency FB Bold" size="16.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Modification">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="158.0" fitWidth="248.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../UI/mra2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="43.0" fitWidth="200.0" layoutX="82.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../UI/tektek2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="42.0" fitWidth="200.0" layoutX="330.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../UI/tektek2.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="30.0" layoutY="35.0" text="Nom :" textFill="WHITE">
+                           <font>
+                              <Font name="Agency FB Bold" size="21.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtNomE" layoutX="90.0" layoutY="33.0" prefHeight="40.0" prefWidth="144.0" stylesheets="@../UI/textFieldStyles.css" />
+                        <Label layoutX="260.0" layoutY="40.0" text="Prenom :" textFill="WHITE">
+                           <font>
+                              <Font name="Agency FB Bold" size="21.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtPrenomE" layoutX="336.0" layoutY="37.0" prefHeight="30.0" prefWidth="142.0" stylesheets="@../UI/textFieldStyles.css" />
+                        <Label layoutX="268.0" layoutY="102.0" text="Age :" textFill="WHITE">
+                           <font>
+                              <Font name="Agency FB Bold" size="21.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnModif" layoutX="293.0" layoutY="169.0" mnemonicParsing="false" onAction="#modifierEnfant" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #ffa100;" text="Modifier">
+                           <font>
+                              <Font name="Agency FB Bold" size="16.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <ImageView fitHeight="42.0" fitWidth="200.0" layoutX="329.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../UI/tektek2.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="txtAge" layoutX="336.0" layoutY="97.0" prefHeight="36.0" prefWidth="140.0" stylesheets="@../UI/textFieldStyles.css" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

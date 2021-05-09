@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="703.0" prefWidth="828.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ListeMaitresseController">
+    <children>
+      <AnchorPane fx:id="p" prefHeight="703.0" prefWidth="826.0">
+         <children>
+            <ImageView fitHeight="703.0" fitWidth="860.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../UI/listeM.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnRecherche" layoutX="352.0" layoutY="154.0" mnemonicParsing="false" onAction="#recherche" style="-fx-background-color: #e0e814;" text="Rechercher">
+               <font>
+                  <Font name="Agency FB Bold" size="13.0" />
+               </font>
+               <graphic>
+                  <TextField fx:id="txtNom" onAction="#recherche" prefHeight="15.0" prefWidth="110.0" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ListView fx:id="lstAffiche" layoutX="193.0" layoutY="198.0" prefHeight="277.0" prefWidth="340.0" stylesheets="@../UI/listStyles.css">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ListView>
+            <Button fx:id="btnretour" layoutY="6.0" mnemonicParsing="false" onAction="#retour" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #0e5366;" text="RETOUR" textFill="#f2ff00">
+               <font>
+                  <Font name="Agency FB Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnAfficher" layoutX="266.0" layoutY="520.0" mnemonicParsing="false" onAction="#Afficher" style="-fx-background-color: #0e5366;" text="Afficher la liste des tuteurs" textFill="#fbff00">
+               <font>
+                  <Font name="Agency FB Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="p1" prefHeight="703.0" prefWidth="834.0" visible="false">
+         <children>
+            <ImageView fitHeight="703.0" fitWidth="834.0" layoutX="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../UI/afficheM.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lbl1" layoutX="536.0" layoutY="315.0" prefHeight="32.0" prefWidth="170.0" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="17.0" />
+               </font></Label>
+            <Label fx:id="lbl2" layoutX="116.0" layoutY="137.0" prefHeight="28.0" prefWidth="163.0" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="17.0" />
+               </font></Label>
+            <Label fx:id="lbl3" layoutX="536.0" layoutY="137.0" prefHeight="28.0" prefWidth="170.0" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="17.0" />
+               </font></Label>
+            <Label fx:id="lbl4" layoutX="123.0" layoutY="316.0" prefHeight="29.0" prefWidth="163.0" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="17.0" />
+               </font></Label>
+            <Label fx:id="lbl5" layoutX="380.0" layoutY="125.0">
+               <font>
+                  <Font name="Agency FB Bold" size="20.0" />
+               </font></Label>
+            <Label fx:id="lbl6" layoutX="120.0" layoutY="516.0" prefHeight="34.0" prefWidth="170.0" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="17.0" />
+               </font></Label>
+            <Button fx:id="afficherimage" layoutX="555.0" layoutY="516.0" mnemonicParsing="false" onAction="#afficherimage" prefHeight="25.0" prefWidth="132.0" stylesheets="@../UI/buttonStyles.css" text="Curriculum Vitae" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fx:id="image" fitHeight="157.0" fitWidth="118.0" layoutX="351.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="l8" layoutX="310.0" layoutY="14.0" text="Infomations du tuteur" textFill="#fe8488">
+               <font>
+                  <Font name="Agency FB Bold" size="29.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnRefuser" layoutX="242.0" layoutY="604.0" mnemonicParsing="false" onAction="#Refuser" prefHeight="28.0" prefWidth="147.0" stylesheets="@../UI/buttonStyles.css" text="Refuser">
+               <font>
+                  <Font name="Agency FB Bold" size="23.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnValider" layoutX="445.0" layoutY="604.0" mnemonicParsing="false" onAction="#Valider" prefHeight="28.0" prefWidth="132.0" stylesheets="@../UI/buttonStyles.css" text="Valider">
+               <font>
+                  <Font name="Agency FB Bold" size="23.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnR" layoutX="6.0" layoutY="7.0" mnemonicParsing="false" onAction="#redirecListe" style="-fx-background-color: #dab0b0;" text="Retour">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

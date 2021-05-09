@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="559.0" prefWidth="996.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MenuParentController">
+    <children>
+      <ImageView fitHeight="662.0" fitWidth="1060.0" layoutX="6.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../UI/choix.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="retour" layoutX="22.0" layoutY="14.0" mnemonicParsing="false" onAction="#redirecm" style="-fx-background-color: #eb3f3f;" text="Retour" textFill="#ffecfa">
+         <font>
+            <Font name="Agency FB Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="msj" layoutX="412.0" layoutY="193.0" mnemonicParsing="false" onAction="#miseajour" prefHeight="37.0" prefWidth="217.0" style="-fx-background-color: #f8e869;" text="Mise à Jour de Votre Compte" textFill="#252524">
+         <font>
+            <Font name="Agency FB Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnespace" layoutX="412.0" layoutY="246.0" mnemonicParsing="false" onAction="#btnespace" prefHeight="34.0" prefWidth="217.0" style="-fx-background-color: #f8e869;" text="Espace Enfants">
+         <font>
+            <Font name="Agency FB Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnAccueil" layoutX="412.0" layoutY="299.0" mnemonicParsing="false" onAction="#redirectAccueil" prefHeight="34.0" prefWidth="217.0" style="-fx-background-color: #f8e869;" text="Espace Educatif">
+         <font>
+            <Font name="Agency FB Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnPay" layoutX="412.0" layoutY="348.0" mnemonicParsing="false" onAction="#redirecPay" prefHeight="34.0" prefWidth="217.0" style="-fx-background-color: #f8e869;" text="Faire un Don">
+         <font>
+            <Font name="Agency FB Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnDeco" layoutX="940.0" layoutY="14.0" mnemonicParsing="false" onAction="#deconnection" style="-fx-background-color: #eb3f3f;" text="Se déconnecter" textFill="#ffecfa">
+         <font>
+            <Font name="Agency FB Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnRec" layoutX="412.0" layoutY="404.0" mnemonicParsing="false" onAction="#conseil" prefHeight="34.0" prefWidth="217.0" style="-fx-background-color: #f8e869;" text="Réclamations et conseils">
+         <font>
+            <Font name="Agency FB Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
