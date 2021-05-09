@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="563.0" prefWidth="1096.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RechercheContesController">
+   <children>
+      <ImageView fitHeight="731.0" fitWidth="1199.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../UI/searchContes.png" />
+         </image>
+      </ImageView>
+      <ListView fx:id="lstAffiche" layoutX="505.0" layoutY="222.0" prefHeight="316.0" prefWidth="480.0" stylesheets="@../UI/listStyles.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ListView>
+      <TextField fx:id="txtRecherche" layoutX="132.0" layoutY="320.0" prefHeight="38.0" prefWidth="261.0" stylesheets="@../UI/textFieldStyles.css" />
+      <Button fx:id="btnRecherche" layoutX="173.0" layoutY="394.0" mnemonicParsing="false" onAction="#rechercheConte" prefHeight="50.0" prefWidth="179.0" stylesheets="@../UI/buttonStyles.css" text="Rechercher conte" textFill="WHITE">
+         <font>
+            <Font name="Agency FB Bold" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnList" layoutX="611.0" layoutY="570.0" mnemonicParsing="false" onAction="#redirectListeConte" prefHeight="50.0" prefWidth="185.0" stylesheets="@../UI/buttonStyles.css" text="Liste Contes" textFill="WHITE">
+         <font>
+            <Font name="Agency FB Bold" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnInv" layoutX="263.0" layoutY="570.0" mnemonicParsing="false" onAction="#redirectInventaireConte" prefHeight="50.0" prefWidth="185.0" stylesheets="@../UI/buttonStyles.css" text="Inventaire Contes" textFill="WHITE">
+         <font>
+            <Font name="Agency FB Bold" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnRet" layoutX="927.0" layoutY="80.0" mnemonicParsing="false" onAction="#redirectHome" stylesheets="@../UI/buttonStyles.css" text="Retour" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Agency FB Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainContesController">
+    <children>
+      <ImageView fitHeight="591.0" fitWidth="669.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../UI/lstContes.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnSearch" layoutX="371.0" layoutY="553.0" mnemonicParsing="false" onAction="#load3" prefHeight="42.0" prefWidth="108.0" style="-fx-background-radius: 90;" stylesheets="@../UI/buttonStyles.css" text="Chercher ">
+         <font>
+            <Font name="Agency FB Bold" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <ListView fx:id="list" layoutX="227.0" layoutY="165.0" prefHeight="275.0" prefWidth="297.0" stylesheets="@../UI/listStyles.css" />
+      <Button fx:id="btnMod" layoutX="217.0" layoutY="553.0" mnemonicParsing="false" onAction="#load1" prefHeight="42.0" prefWidth="102.0" style="-fx-background-radius: 90;" stylesheets="@../UI/buttonStyles.css" text="Modifier">
+         <font>
+            <Font name="Agency FB Bold" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnAjout" layoutX="58.0" layoutY="555.0" mnemonicParsing="false" onAction="#load" prefHeight="39.0" prefWidth="108.0" style="-fx-background-radius: 90;" stylesheets="@../UI/buttonStyles.css" text="Ajouter">
+         <font>
+            <Font name="Agency FB Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnSupp" layoutX="520.0" layoutY="552.0" mnemonicParsing="false" onAction="#load2" prefHeight="45.0" prefWidth="116.0" style="-fx-background-radius: 90;" stylesheets="@../UI/buttonStyles.css" text="Supprimer">
+         <font>
+            <Font name="Agency FB Bold" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="318.0" layoutY="458.0" mnemonicParsing="false" onAction="#exporter1" prefHeight="22.0" prefWidth="116.0" style="-fx-background-radius: 90;" stylesheets="@../UI/buttonStyles.css" text="Exporter">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnRet" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#redirectRetour" stylesheets="@../UI/buttonStyles.css" text="Retour" underline="true">
+         <font>
+            <Font name="Agency FB Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="614.0" prefWidth="921.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AjouteEnfantsController">
+    <children>
+      <AnchorPane fx:id="p1" prefHeight="621.0" prefWidth="930.0">
+         <children>
+            <ImageView fitHeight="620.0" fitWidth="936.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../UI/connecterEnfant.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnsc" layoutX="397.0" layoutY="418.0" mnemonicParsing="false" onAction="#connecterEnfant" prefHeight="28.0" prefWidth="121.0" stylesheets="@../UI/buttonStyles.css" text="Se Connecter" textFill="#f2deb1">
+               <font>
+                  <Font name="Agency FB Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextField fx:id="txtnomEnf1" layoutX="308.0" layoutY="234.0" prefHeight="25.0" prefWidth="306.0" />
+            <PasswordField fx:id="txtmps1" layoutX="308.0" layoutY="328.0" prefHeight="25.0" prefWidth="306.0" />
+            <Button fx:id="btnInsc" layoutX="397.0" layoutY="468.0" mnemonicParsing="false" onAction="#redirecInscri" prefHeight="25.0" prefWidth="121.0" stylesheets="@../UI/buttonStyles.css" text="S'inscrire" textFill="#ffe3aa">
+               <font>
+                  <Font name="Agency FB Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="p2" prefHeight="606.0" prefWidth="930.0" visible="false">
+         <children>
+            <ImageView fitHeight="627.0" fitWidth="930.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../UI/ajoutEnfant.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtage" layoutX="310.0" layoutY="360.0" prefHeight="25.0" prefWidth="306.0" stylesheets="@../UI/textFieldStyles.css" />
+            <TextField fx:id="txtprenomEnf" layoutX="310.0" layoutY="298.0" prefHeight="25.0" prefWidth="306.0" stylesheets="@../UI/textFieldStyles.css" />
+            <TextField fx:id="txtnomEnf" layoutX="310.0" layoutY="235.0" prefHeight="25.0" prefWidth="306.0" stylesheets="@../UI/textFieldStyles.css" />
+            <PasswordField fx:id="txtmps" layoutX="310.0" layoutY="420.0" prefHeight="25.0" prefWidth="306.0" stylesheets="@../UI/textFieldStyles.css" />
+            <Button fx:id="btnAjoutE" layoutX="400.0" layoutY="497.0" mnemonicParsing="false" onAction="#AjoutEnfant" prefHeight="28.0" prefWidth="121.0" stylesheets="@../UI/buttonStyles.css" text="S'inscrire">
+               <font>
+                  <Font name="Agency FB Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnImg" layoutX="403.0" layoutY="455.0" mnemonicParsing="false" onAction="#ajouterImg" prefHeight="28.0" prefWidth="213.0" stylesheets="@../UI/buttonStyles.css" text="Ajouter votre image" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

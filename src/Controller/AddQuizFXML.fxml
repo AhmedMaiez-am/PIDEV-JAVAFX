@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorpane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddQuizFXMLController">
+   <children>
+      <SplitPane dividerPositions="0.5510373443983403" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="701.0" prefWidth="661.0">
+               <children>
+                  <ImageView fitHeight="1080.0" fitWidth="1632.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../UI/iheb1.png" />
+                     </image>
+                  </ImageView>
+                  <VBox layoutX="109.0" layoutY="107.0" prefHeight="753.0" prefWidth="836.0">
+                     <children>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter un nouveau Quiz" textAlignment="CENTER" wrappingWidth="406.13671875">
+                                 <font>
+                                    <Font name="Agency FB Bold" size="45.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets top="20.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox alignment="TOP_CENTER" prefHeight="47.0" prefWidth="670.0">
+                           <children>
+                              <FlowPane prefHeight="76.0" prefWidth="663.0">
+                                 <children>
+                                    <JFXTextField fx:id="tftitle" alignment="CENTER" focusColor="#00ff1a" labelFloat="true" prefHeight="2.0" prefWidth="515.0" promptText="Entrer le titre" unFocusColor="WHITE">
+                                       <font>
+                                          <Font name="Agency FB" size="32.0" />
+                                       </font>
+                                    </JFXTextField>
+                                 </children>
+                              </FlowPane>
+                              <JFXRadioButton fx:id="roption41" prefHeight="47.0" prefWidth="303.0" text="Quiz Americain" textFill="WHITE">
+                                 <unSelectedColor>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </unSelectedColor>
+                                 <selectedColor>
+                                    <Color green="1.0" blue="0.05776173248887062" />
+                                 </selectedColor>
+                                 <font>
+                                    <Font name="Agency FB" size="32.0" />
+                                 </font></JFXRadioButton>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="59.0" prefHeight="51.0" prefWidth="836.0">
+                           <padding>
+                              <Insets top="30.0" />
+                           </padding>
+                           <children>
+                              <JFXTextArea fx:id="questionfield" focusColor="#00ff22" labelFloat="true" prefHeight="52.0" prefWidth="605.0" promptText="Entrer la question" unFocusColor="WHITE">
+                                 <font>
+                                    <Font name="Agency FB" size="32.0" />
+                                 </font>
+                              </JFXTextArea>
+                           </children>
+                        </HBox>
+                        <VBox alignment="CENTER" prefHeight="379.0" prefWidth="836.0">
+                           <children>
+                              <JFXTextField fx:id="tfoption1" focusColor="#00ff11" labelFloat="true" layoutX="10.0" layoutY="10.0" prefHeight="35.0" prefWidth="736.0" promptText="Option 1" text=" " unFocusColor="WHITE">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="50.0" right="50.0" top="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="Agency FB" size="30.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="tfoption2" focusColor="#00ff11" labelFloat="true" layoutX="10.0" layoutY="10.0" prefHeight="8.0" prefWidth="736.0" promptText="Option 2" text=" " unFocusColor="WHITE">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="50.0" right="50.0" top="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="Agency FB" size="30.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="tfoption3" focusColor="#00ff11" labelFloat="true" layoutX="10.0" layoutY="35.0" promptText="Option 3" text=" " unFocusColor="WHITE">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="50.0" right="50.0" top="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="Agency FB" size="30.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="tfoption4" focusColor="#00ff11" labelFloat="true" layoutX="60.0" layoutY="55.0" prefHeight="0.0" prefWidth="736.0" promptText=" Option 4" text=" " unFocusColor="WHITE">
+                                 <font>
+                                    <Font name="Agency FB" size="30.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="50.0" right="50.0" top="10.0" />
+                                 </VBox.margin>
+                              </JFXTextField>
+                           </children>
+                           <opaqueInsets>
+                              <Insets bottom="10.0" top="30.0" />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets bottom="10.0" top="35.0" />
+                           </padding>
+                        </VBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="48.0" prefWidth="292.0">
+                                 <children>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Sélectionner la bonne réponse" textAlignment="CENTER" wrappingWidth="291.13671875">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                           </children></HBox>
+                        <FlowPane alignment="CENTER" prefHeight="37.0" prefWidth="482.0">
+                           <children>
+                              <JFXRadioButton fx:id="roption4" text="Option 4" textFill="WHITE">
+                                 <FlowPane.margin>
+                                    <Insets left="20.0" right="20.0" top="20.0" />
+                                 </FlowPane.margin>
+                                 <unSelectedColor>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </unSelectedColor>
+                                 <selectedColor>
+                                    <Color green="1.0" blue="0.5" />
+                                 </selectedColor>
+                              </JFXRadioButton>
+                              <JFXRadioButton fx:id="roption3" text="Option 3" textFill="WHITE">
+                                 <FlowPane.margin>
+                                    <Insets left="20.0" right="20.0" top="20.0" />
+                                 </FlowPane.margin>
+                                 <unSelectedColor>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </unSelectedColor>
+                                 <selectedColor>
+                                    <Color green="1.0" blue="0.5" />
+                                 </selectedColor>
+                              </JFXRadioButton>
+                              <JFXRadioButton fx:id="roption2" text="Option 2" textFill="WHITE">
+                                 <FlowPane.margin>
+                                    <Insets left="20.0" right="20.0" top="20.0" />
+                                 </FlowPane.margin>
+                                 <unSelectedColor>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </unSelectedColor>
+                                 <selectedColor>
+                                    <Color green="1.0" blue="0.5" />
+                                 </selectedColor>
+                              </JFXRadioButton>
+                              <JFXRadioButton fx:id="roption1" text="Option 1" textFill="WHITE">
+                                 <FlowPane.margin>
+                                    <Insets left="20.0" right="20.0" top="20.0" />
+                                 </FlowPane.margin>
+                                 <unSelectedColor>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </unSelectedColor>
+                                 <selectedColor>
+                                    <Color green="1.0" blue="0.5" />
+                                 </selectedColor>
+                              </JFXRadioButton>
+                           </children>
+                        </FlowPane>
+                     </children>
+                  </VBox>
+                  <FlowPane layoutX="192.0" layoutY="871.0" prefHeight="117.0" prefWidth="704.0">
+                     <children>
+                        <JFXButton fx:id="submitQuiz" alignment="CENTER" onAction="#submitQuiz" prefHeight="67.0" prefWidth="220.0" style="-fx-background-color: #2ecc72;" text="Ajouter Quiz" textFill="#110000">
+                           <font>
+                              <Font name="Agency FB" size="35.0" />
+                           </font>
+                           <FlowPane.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </FlowPane.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="nextQuestion" alignment="CENTER" onAction="#AddNextQuestion" prefHeight="67.0" prefWidth="280.0" style="-fx-background-color: #3498DB;" text="Question suivante">
+                           <font>
+                              <Font name="Agency FB" size="35.0" />
+                           </font>
+                           <FlowPane.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </FlowPane.margin>
+                        </JFXButton>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="50.0" right="50.0" top="20.0" />
+                     </padding>
+                  </FlowPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="780.0" prefWidth="472.0">
+               <children>
+                  <ImageView fx:id="imagebackground" fitHeight="315.0" fitWidth="544.0" layoutX="-2.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" />
+                  <JFXTreeView fx:id="treeView" style="-fx-background-color: #00cbff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

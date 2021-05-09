@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="733.0" prefWidth="1053.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ListeContes">
+   <children>
+      <ImageView fitHeight="767.0" fitWidth="1102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../UI/listContes.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="588.0" layoutY="231.0" text="Liste des contes">
+         <font>
+            <Font name="Agency FB Bold" size="55.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.10319200903177261" green="0.5789473652839661" blue="0.00804093573242426" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color green="1.0" blue="0.10000000149011612" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ListView fx:id="lstContes" layoutX="277.0" layoutY="281.0" prefHeight="271.0" prefWidth="271.0" stylesheets="@../UI/listStyles.css" />
+      <Button fx:id="btnAffiche" layoutX="646.0" layoutY="342.0" mnemonicParsing="false" onAction="#afficherContes" stylesheets="@../UI/buttonStyles.css" text="Afficher la liste des contes" textFill="#f500af">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnAjout" layoutX="653.0" layoutY="400.0" mnemonicParsing="false" onAction="#ajouterContes" prefHeight="34.0" prefWidth="173.0" stylesheets="@../UI/buttonStyles.css" text="Ajouter à l'inventaire" textFill="#ff03c7">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnInv" layoutX="653.0" layoutY="460.0" mnemonicParsing="false" onAction="#redirectInventaireContes" prefHeight="34.0" prefWidth="173.0" stylesheets="@../UI/buttonStyles.css" text="Consulter Inventaire" textFill="#ff00d7">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnRet" layoutX="935.0" layoutY="106.0" mnemonicParsing="false" onAction="#redirectHome" prefHeight="36.0" prefWidth="69.0" stylesheets="@../UI/buttonStyles.css" text="Retour" textFill="#ff00d7" underline="true">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnQR" layoutX="646.0" layoutY="502.0" mnemonicParsing="false" onAction="#QRCode" prefHeight="34.0" prefWidth="173.0" stylesheets="@../UI/buttonStyles.css" text="Génerer QR Code" textFill="#ff00d7" underline="true">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

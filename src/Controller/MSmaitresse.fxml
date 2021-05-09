@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="535.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MSmaitresseController">
+    <children>
+      <ImageView fitHeight="554.0" fitWidth="989.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../UI/espacetuteur.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="dec" layoutX="740.0" layoutY="13.0" mnemonicParsing="false" onAction="#deconnecter" prefHeight="30.0" prefWidth="97.0" stylesheets="@../UI/buttonStyles.css" text="Retour" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Agency FB Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnRecomp" layoutX="588.0" layoutY="13.0" mnemonicParsing="false" onAction="#redirectRecomp" prefHeight="28.0" prefWidth="134.0" stylesheets="@../UI/buttonStyles.css" text="Espace Récompenses" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Agency FB Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TabPane layoutX="14.0" layoutY="107.0" prefHeight="337.0" prefWidth="507.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Modification">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="46.0" fitWidth="239.0" layoutX="274.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../UI/txtNom1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="46.0" fitWidth="230.0" layoutX="274.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../UI/txtPrenom.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="52.0" fitWidth="229.0" layoutX="274.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../UI/txtEmail.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="42.0" fitWidth="233.0" layoutX="6.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../UI/txtCIN1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="48.0" fitWidth="134.0" layoutX="81.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../UI/btn.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="46.0" fitWidth="152.0" layoutX="318.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../UI/btn1.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="56.0" layoutY="92.0" text="Veuillez saisir votre CIN " textFill="WHITE">
+                           <font>
+                              <Font name="Agency FB Bold" size="21.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="idup" layoutX="81.0" layoutY="128.0" stylesheets="@../UI/textFieldStyles.css" />
+                        <TextField fx:id="txtsecname" layoutX="344.0" layoutY="46.0" stylesheets="@../UI/textFieldStyles.css" />
+                        <Button fx:id="getMaitresse" layoutX="89.0" layoutY="177.0" mnemonicParsing="false" onAction="#getmaitresse" stylesheets="@../UI/buttonStyles.css" text="Récuperer les détails ">
+                           <font>
+                              <Font name="Agency FB Bold" size="13.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <TextField fx:id="txtpre" layoutX="345.0" layoutY="104.0" stylesheets="@../UI/textFieldStyles.css" />
+                        <TextField fx:id="txtemail" layoutX="346.0" layoutY="160.0" stylesheets="@../UI/textFieldStyles.css" />
+                        <Button fx:id="btModifier" layoutX="327.0" layoutY="214.0" mnemonicParsing="false" onAction="#confirmeUpdate" prefHeight="39.0" prefWidth="134.0" stylesheets="@../UI/buttonStyles.css" text="Modifier" textFill="WHITE">
+                           <font>
+                              <Font name="Agency FB Bold" size="19.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Suppression">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="49.0" fitWidth="231.0" layoutX="125.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../UI/txtCIN.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="44.0" fitWidth="249.0" layoutX="125.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../UI/txtNom.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="39.0" fitWidth="156.0" layoutX="184.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../UI/btnn.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="93.0" layoutY="51.0" text="Veuillez saisir les détails de votre compte :" textFill="WHITE">
+                           <font>
+                              <Font name="Agency FB Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtp" layoutX="202.0" layoutY="174.0" stylesheets="@../UI/textFieldStyles.css" />
+                        <TextField fx:id="txtm" layoutX="202.0" layoutY="107.0" stylesheets="@../UI/textFieldStyles.css" />
+                        <Button fx:id="Supp" layoutX="190.0" layoutY="223.0" mnemonicParsing="false" onAction="#SupprimerM" prefHeight="30.0" prefWidth="122.0" stylesheets="@../UI/buttonStyles.css" text="Supprimer" textFill="WHITE">
+                           <font>
+                              <Font name="Agency FB Bold" size="15.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
